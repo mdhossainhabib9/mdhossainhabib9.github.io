@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Md. Hossain Habib Khokon — learning Data Entry, Google Sheets, Web Research, and AI-assisted workflows.">
+  <title>Md. Hossain Habib Khokon | Personal Portfolio</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --ink: #172235;
+      --muted: #5c687a;
+      --brand: #1459c7;
+      --brand-dark: #103e86;
+      --line: #dce4ef;
+      --soft: #eaf2ff;
+      --radius: 18px;
+      --shadow: 0 12px 32px rgba(27, 50, 85, .08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    a { color: var(--brand); }
+    .container { width: min(1080px, 92%); margin: 0 auto; }
+    header {
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+    .nav {
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+    .logo { font-weight: 800; letter-spacing: -.03em; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { text-decoration: none; color: var(--ink); font-size: .94rem; font-weight: 600; }
+    nav a:hover { color: var(--brand); }
+    .hero { padding: 76px 0 56px; }
+    .hero-grid { display: grid; grid-template-columns: 1.45fr .8fr; gap: 30px; align-items: center; }
+    .eyebrow {
+      display: inline-block; background: var(--soft); color: var(--brand-dark);
+      border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: .82rem;
+    }
+    h1 { font-size: clamp(2.3rem, 5vw, 4.2rem); line-height: 1.08; letter-spacing: -.05em; margin: 18px 0; }
+    h2 { font-size: clamp(1.65rem, 3vw, 2.3rem); line-height: 1.2; letter-spacing: -.035em; margin: 0 0 12px; }
+    h3 { margin: 0 0 8px; }
+    .lead { color: var(--muted); font-size: 1.12rem; max-width: 680px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+    .btn { display: inline-block; text-decoration: none; padding: 11px 17px; border-radius: 11px; font-weight: 750; border: 1px solid var(--brand); }
+    .btn.primary { background: var(--brand); color: white; }
+    .btn.secondary { background: white; color: var(--brand); }
+    .profile-card { background: linear-gradient(145deg, #163b70, #1762c6); color: white; padding: 28px; border-radius: 24px; box-shadow: var(--shadow); }
+    .avatar {
+      width: 82px; height: 82px; display: grid; place-items: center;
+      border: 1px solid rgba(255,255,255,.55); background: rgba(255,255,255,.14);
+      border-radius: 22px; font-size: 1.7rem; font-weight: 800; margin-bottom: 18px;
+    }
+    .profile-card p { color: #e4eeff; margin-bottom: 0; }
+    section { padding: 46px 0; }
+    .section-intro { color: var(--muted); max-width: 720px; margin: 0 0 24px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+    .card p { color: var(--muted); margin-bottom: 0; }
+    .icon { font-size: 1.5rem; margin-bottom: 10px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+    .tag { display: inline-block; background: #eef2f8; color: #33435c; padding: 5px 10px; border-radius: 999px; font-size: .83rem; }
+    .notice { background: #fff8e8; border: 1px solid #f1d99b; color: #674b0b; border-radius: 14px; padding: 16px 18px; }
+    .project-placeholder { border: 1px dashed #a9b8cb; border-radius: 14px; padding: 18px; background: #fbfdff; }
+    .project-placeholder p { margin: 6px 0 0; }
+    .bilingual { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .contact-card { background: #132844; color: white; border-radius: 22px; padding: 28px; }
+    .contact-card p { color: #dce8f8; }
+    .contact-card a { color: #a9d2ff; }
+    footer { padding: 28px 0; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
+    @media (max-width: 760px) {
+      .nav { padding: 13px 0; align-items: flex-start; flex-direction: column; }
+      nav { gap: 12px; }
+      .hero { padding-top: 48px; }
+      .hero-grid, .grid, .bilingual { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">Hossain Habib Khokon</div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">PERSONAL PORTFOLIO · BEGINNER</span>
+          <h1>Md. Hossain<br>Habib Khokon</h1>
+          <p class="lead">I am building my skills in Data Entry, Google Sheets, Web Research, and AI-assisted work. I value accuracy, clear communication, and continuous learning.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">Explore My Work</a>
+            <a class="btn secondary" href="#contact">Contact</a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <div class="avatar" aria-hidden="true">HHK</div>
+          <h2 style="font-size:1.55rem">Data & Research Learner</h2>
+          <p>Currently learning practical digital skills and preparing sample projects to demonstrate my work.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="section-intro">I am at the beginning of my professional journey. I am currently learning how to organize information, research reliable sources, and use digital tools to complete tasks carefully. This portfolio will grow as I complete real practice projects.</p>
+        <div class="bilingual">
+          <article class="card">
+            <h3>English</h3>
+            <p>I am a beginner developing skills in data organization, online research, spreadsheets, and AI-assisted workflows. I am focused on learning, practicing, and presenting honest examples of my work.</p>
+          </article>
+          <article class="card">
+            <h3>বাংলা</h3>
+            <p>আমি বর্তমানে Data Entry, Google Sheets, Web Research এবং AI-সহায়ক কাজ শেখার পর্যায়ে আছি। নিয়মিত অনুশীলন করে নিজের বাস্তব কাজের নমুনা তৈরি করছি। এই পোর্টফোলিওতে কেবল আমার করা কাজ ও শেখার অগ্রগতি যোগ করব।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills I Am Learning</h2>
+        <p class="section-intro">These are learning areas, not claims of professional expertise. I will update this section as my abilities improve.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon" aria-hidden="true">▦</div>
+            <h3>Data Entry & Data Organization</h3>
+            <p>Practicing accurate data entry, consistent formatting, sorting, filtering, and checking information for errors.</p>
+            <div class="tag-list"><span class="tag">Accuracy</span><span class="tag">Formatting</span><span class="tag">Data checking</span></div>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">▤</div>
+            <h3>Google Sheets</h3>
+            <p>Learning spreadsheet basics, formulas, tables, filters, and simple summaries.</p>
+            <div class="tag-list"><span class="tag">Formulas</span><span class="tag">Sorting</span><span class="tag">Filtering</span></div>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">⌕</div>
+            <h3>Web Research</h3>
+            <p>Learning to find relevant information, compare sources, verify details, and organize research results.</p>
+            <div class="tag-list"><span class="tag">Online research</span><span class="tag">Source checking</span></div>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">✳</div>
+            <h3>AI-Assisted Work</h3>
+            <p>Learning to use AI tools as an assistant while checking outputs for accuracy and following task instructions.</p>
+            <div class="tag-list"><span class="tag">AI assistance</span><span class="tag">Fact-checking</span><span class="tag">Quality review</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects & Practice Work</h2>
+        <p class="section-intro">I will add links and screenshots here after completing each project. No completed projects are being claimed yet.</p>
+        <div class="notice"><strong>Portfolio in progress:</strong> I am currently preparing my first practice projects. Please check back as I add verified examples.</div>
+        <div class="grid" style="margin-top:18px">
+          <article class="project-placeholder">
+            <h3>Project 01 — Spreadsheet Practice</h3>
+            <p>Status: Planned. A sample spreadsheet demonstrating formulas, sorting, filtering, and data cleanup will be added here after completion.</p>
+          </article>
+          <article class="project-placeholder">
+            <h3>Project 02 — Web Research Sample</h3>
+            <p>Status: Planned. A small research table with source links and checked details will be added here after completion.</p>
+          </article>
+          <article class="project-placeholder">
+            <h3>Project 03 — AI Output Review</h3>
+            <p>Status: Planned. A sample review showing how AI-generated information is checked will be added here after completion.</p>
+          </article>
+          <article class="project-placeholder">
+            <h3>Project 04 — Data Cleaning</h3>
+            <p>Status: Planned. A practice dataset showing corrections and formatting improvements will be added here after completion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2>Contact</h2>
+          <p>I am building my portfolio and open to appropriate beginner-level opportunities as my skills develop.</p>
+          <p><strong>Email:</strong> Add your professional email here</p>
+          <p><strong>GitHub:</strong> Add your GitHub profile link here</p>
+          <p><strong>Location:</strong> Bangladesh</p>
+          <p style="font-size:.9rem">Before publishing, replace the email and GitHub placeholders with your own public contact details. Do not publish private information.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year">2026</span> Md. Hossain Habib Khokon · Personal Portfolio · Built with HTML & CSS</div>
+  </footer>
+</body>
+</html>
