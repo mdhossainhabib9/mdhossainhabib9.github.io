@@ -1,31 +1,43 @@
-# Md. Hossain Habib Khokon — Personal Portfolio
+Md. Hossain Habib Khokon
 
-A responsive, single-page personal portfolio built with plain HTML and CSS for GitHub Pages.
+EEE Student | Aspiring Engineer | Home Tutor
 
-## Files
+Welcome to my personal portfolio repository. I'm an Electrical and Electronic Engineering student at Uttara University, Bangladesh, interested in electronics, robotics, and problem-solving.
 
-- `index.html` — the website.
-- `profile.jpg` — your portrait photo (add this file before publishing if you want to show your photo; the page displays HH initials if the photo is missing).
-- `cv.pdf` — your final CV PDF (add this when ready; the CV section currently explains that the PDF is pending).
+Education
 
-## Publish or update with GitHub Pages
+- University: Uttara University
+- Department: Electrical and Electronic Engineering (EEE)
+- CGPA: 3.50 / 4.00
+- Expected Graduation: 2029
 
-1. Open `https://github.com/mdhossainhabib9/mdhossainhabib9.github.io`.
-2. Open the repository's **Code** tab.
-3. Upload or replace `index.html` in the repository root. Keep only one `index.html` at the root.
-4. When ready, upload your portrait as `profile.jpg` and your final CV as `cv.pdf` to the same root folder.
-5. Commit the changes to the `main` branch.
-6. If GitHub Pages is not already enabled, open **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, then save.
-7. Visit `https://mdhossainhabib9.github.io`. It may take a few minutes for changes to appear. Refresh the page if needed.
+Achievement
 
-## Updating your photo and CV
+- 3rd Place — Mini Robo Soccer Bot Competition 2026
 
-The photo filename must be exactly `profile.jpg`. The CV filename must be exactly `cv.pdf`. Upload both to the same folder as `index.html`.
+Portfolio
 
-## Editing the website
+🌐 Website: "mdhossainhabib9.github.io" (https://mdhossainhabib9.github.io/)
 
-Open `index.html` and edit the relevant text. Keep claims accurate: update planned samples to completed only after the work is actually finished. Do not upload confidential or sensitive information.
+Technologies
 
-## Contact links
+- HTML
+- CSS
+- JavaScript
 
-The email, phone number, GitHub profile, and LinkedIn profile are included in the HTML. Check them before sharing the public website.
+Repository Files
+
+- "index.html" — Personal portfolio website
+- "profile.jpg" — Profile photo
+- "cv.pdf" — Curriculum Vitae (CV)
+
+Connect With Me
+
+- Email: "mdhossainhabib9@gmail.com" (mailto:mdhossainhabib9@gmail.com)
+- LinkedIn: "LinkedIn Profile" (https://www.linkedin.com/in/md-hossain-habib-758774365/)
+- GitHub: "GitHub Profile" (https://github.com/mdhossainhabib9)
+- Facebook: "Facebook Profile" (https://www.facebook.com/share/1JGUjNUc6i/)
+
+---
+
+Learning, building, and growing through engineering.
